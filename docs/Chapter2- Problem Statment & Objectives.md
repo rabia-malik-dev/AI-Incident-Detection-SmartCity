@@ -18,15 +18,14 @@ which is inefficient, error-prone, and resource-heavy.
 
 ## 2.2 Limitations of Current Solutions
 
-### Traditional Method                                Limitations
+| Traditional Method                  | Limitations                                           |
+|------------------------------------|-------------------------------------------------------|
+| Manual monitoring of CCTV footage   | Time-consuming, requires continuous human attention   |
+| Physical checkpoints and patrolling | Limited coverage, low detection rate                  |
+| Speed or direction sensors          | Costly to install and maintain at large scale         |
+| Existing AI tools (limited)         | Not integrated into full-stack systems, hard to scale |
 
-a) Manual monitoring of CCTV footage	                a) Time-consuming, requires continuous human attention
 
-b) Physical checkpoints and patrolling	              b) Limited coverage, low detection rate
-
-c) Speed or direction sensors	                        c) Costly to install and maintain at large scale
-
-d) Existing AI tools (limited)	                      d) Not integrated into full-stack systems, hard to scale
 
 There is a clear need for an automated, scalable, and AI-powered solution that can work seamlessly with existing video infrastructure 
 and produce actionable insights in real-time.
@@ -40,7 +39,7 @@ and FastAPI ML microservice.
 
 ## 2.4 Key Goals and Objectives
 
-### | #   | Objective               | Description                                                                                           |
+| #   | Objective               | Description                                                                                           |
 | --- | ----------------------- | ----------------------------------------------------------------------------------------------------- |
 | 1️⃣ | Automate detection      | Remove need for manual footage review using ML                                                        |
 | 2️⃣ | Scalable architecture   | Support both offline (upload) and real-time (CCTV) modes                                              |
@@ -48,9 +47,10 @@ and FastAPI ML microservice.
 | 4️⃣ | Modular and upgradable  | Each layer (FE/BE/ML) works independently for easy upgrades                                           |
 | 5️⃣ | Recruiter-grade project | Design and document the project to match real-world enterprise systems (e.g., smart city deployments) |
 
+
 ## 2.5 System Benefits
 
-### | Stakeholder            | Benefit                                                           |
+| Stakeholder            | Benefit                                                           |
 | ---------------------- | ----------------------------------------------------------------- |
 | 👮 Traffic Authorities | Reduce manpower needed for surveillance, act faster on violations |
 | 🏙️ City Governments   | Smart city alignment, safer roads                                 |
