@@ -49,7 +49,9 @@ b) Problem Statement & Objectives – What the system solves
 c) System Overview – Architecture, user roles, and features
 
 d) System Requirements – Functional and non-functional specifications
+
 e) System Design – Architecture diagrams and data flows
+
 f) Technology Stack – Tools, libraries, and rationale
 
 
