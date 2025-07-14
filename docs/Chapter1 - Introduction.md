@@ -28,6 +28,7 @@ e) Academic reviewers or mentors
 This project aims to develop a real-time, scalable solution that automates the detection of traffic violations from uploaded videos or live CCTV streams. 
 
 It includes:
+
 a) An Angular-based frontend dashboard
 
 b) A .NET Core backend API for video handling and data management
