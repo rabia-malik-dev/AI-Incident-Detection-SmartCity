@@ -13,6 +13,7 @@ It serves as a reference for developers, testers, stakeholders, and recruiters t
 
 # 1.3 Intended Audience
 > This document is intended for the following audiences:
+
 a) Software developers and engineers
 b) Technical architects and AI/ML researchers
 c) Government smart city planners
@@ -21,6 +22,7 @@ e) Academic reviewers or mentors
 
 # 1.4 Project Scope
 This project aims to develop a real-time, scalable solution that automates the detection of traffic violations from uploaded videos or live CCTV streams. 
+
 It includes:
 a) An Angular-based frontend dashboard
 b) A .NET Core backend API for video handling and data management
@@ -31,6 +33,7 @@ enabling real-time monitoring and incident detection in smart cities.
 
 # 1.5 Document Organization
 This SRS is organized into the following chapters:
+
 a) Introduction – Overview, scope, and purpose
 b) Problem Statement & Objectives – What the system solves
 c) System Overview – Architecture, user roles, and features
