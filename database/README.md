@@ -2,22 +2,37 @@
 
 SQL Server schema and seeds for the incident detection platform.
 
+**Source of truth:** `schema.sql` (EF Core migrations in `backend/` should match this).
+
+## Prerequisites
+
+- Docker: `docker compose up -d db` from repo root
+- SSMS or Azure Data Studio → `localhost,1433`, SQL login `sa`, password from `.env`
+
+## Apply schema (Week 1)
+
+1. Open **SSMS** → connect to `localhost,1433`
+2. **File → Open → File** → select `database/schema.sql`
+3. **Execute** (F5)
+4. Optional: run `database/seed.dev.sql`
+5. Refresh **Databases → IncidentDetection → Tables** — you should see:
+   - `Users`
+   - `CameraProfiles`
+   - `Videos`
+   - `ProcessingJobs`
+   - `Violations`
+
 ## Files
 
 | File | Purpose |
 | ---- | ------- |
-| `schema.sql` | Tables, FKs, indexes (to be added in Phase 1) |
-| `seed.dev.sql` | Dev admin user only—never use in production |
+| `schema.sql` | Database + tables, FKs, indexes |
+| `seed.dev.sql` | Dev camera profile (no users until backend auth) |
 
-## Core entities
+## Violation types (`Violations.ViolationType`)
 
-- **Users** — auth, roles (Admin, Officer)
-- **Videos** — upload metadata, storage path, duration
-- **ProcessingJobs** — status, timestamps, error messages
-- **Violations** — `Type` (`WrongDirection`, `HelmetMissing`, `Overspeeding`, `PossibleAccident`), confidence, frame time, snapshot path, `TrackId`
-- **CameraProfiles** — ROI, allowed direction, speed limit, calibration
+`WrongDirection` · `HelmetMissing` · `Overspeeding` · `PossibleAccident`
 
 ## Docker
 
-Started via root `docker-compose.yml` service `db`.  
-EF migrations in `backend/` should match this schema (document which is source of truth).
+Service `db` in root `docker-compose.yml`; data persisted in volume `sqldata`.
