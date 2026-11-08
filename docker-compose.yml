@@ -1,0 +1,48 @@
+# Phase 0: database only. Uncomment services as each phase is implemented.
+# See docs/IMPLEMENTATION-ROADMAP.md
+
+services:
+  db:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: smartcity-db
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_SA_PASSWORD: ${MSSQL_SA_PASSWORD:?set in .env}
+    ports:
+      - "1433:1433"
+    volumes:
+      - sqldata:/var/opt/mssql
+    healthcheck:
+      test: /opt/mssql-tools18/bin/sqlcmd -S localhost -U sa -P "$$MSSQL_SA_PASSWORD" -C -Q "SELECT 1" || exit 1
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 30s
+
+  # ml-service:
+  #   build: ./ml-service
+  #   ports: ["8000:8000"]
+  #   volumes: [uploads:/data/uploads, snapshots:/data/snapshots, ml-models:/models]
+  #   environment:
+  #     YOLO_WEIGHTS: /models/yolov8s.pt
+  #     DEVICE: cpu
+  #   depends_on:
+  #     db: { condition: service_healthy }
+
+  # backend:
+  #   build: ./backend
+  #   ports: ["5000:8080"]
+  #   env_file: .env
+  #   volumes: [uploads:/data/uploads, snapshots:/data/snapshots]
+  #   depends_on: [db, ml-service]
+
+  # frontend:
+  #   build: ./frontend
+  #   ports: ["4200:4200"]
+  #   depends_on: [backend]
+
+volumes:
+  sqldata:
+  # uploads:
+  # snapshots:
+  # ml-models:
