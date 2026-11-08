@@ -17,4 +17,4 @@
 
 **Repository layout (target):** `frontend/` · `backend/` · `ml-service/` · `database/` · `docs/` · `docker-compose.yml`
 
-> **Note:** An early **Blazor WASM** spike exists on `main` under `AIIncidentDetection.*`. It is **not** part of the product UI. The official frontend is **Angular** only; that spike will be removed when `frontend/` is scaffolded.
+> **Note:** A former Blazor WASM spike was removed; implementation uses `frontend/`, `backend/`, `ml-service/`, `database/` only. See [LEGACY-BLAZOR.md](./LEGACY-BLAZOR.md).

@@ -187,7 +187,7 @@ AI-Incident-Detection-SmartCity/
 └── README.md
 ```
 
-**Deprecated on `main`:** `AIIncidentDetection.Client` (Blazor) — remove when `frontend/` is created.
+**Removed:** former `AIIncidentDetection.*` Blazor solution; use `frontend/` for UI.
 
 # 5.7 Key Design Principles
 | Principle       | Application in Project                                   |

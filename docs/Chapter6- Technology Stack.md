@@ -9,7 +9,7 @@
 | **Bootstrap** | Layout / responsive |
 | **Chart.js** | Violation stats by type |
 
-**Not used:** Blazor (deprecated spike only).
+**Not used:** Blazor (removed from repo).
 
 ## Backend (`backend/`)
 

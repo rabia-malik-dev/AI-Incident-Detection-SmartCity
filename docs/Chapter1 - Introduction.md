@@ -30,7 +30,7 @@ e) Mentors and academic reviewers
 
 **Input modes:** manual upload (phase 1); RTSP live CCTV (later).
 
-**UI:** Angular only. A prior **Blazor** spike on `main` is deprecated.
+**UI:** Angular only (`frontend/`). Legacy Blazor solution removed—see [LEGACY-BLAZOR.md](./LEGACY-BLAZOR.md).
 
 ## 1.5 Document Organization
 

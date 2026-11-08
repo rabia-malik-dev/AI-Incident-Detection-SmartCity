@@ -4,7 +4,7 @@ An AI-powered, **Dockerized microservice** system that detects traffic violation
 
 **Stack:** Angular · ASP.NET Core Web API · FastAPI · YOLOv8 + ByteTrack · SQL Server · Docker Compose
 
-> **Legacy note:** `main` may still contain an early **Blazor WASM** spike (`AIIncidentDetection.*`). That was a throwaway template. The product UI is **Angular only**, migrating to `frontend/`, `backend/`, `ml-service/`, `database/`.
+**Implementation:** all application code lives under `frontend/`, `backend/`, `ml-service/`, and `database/` (see [roadmap](./docs/IMPLEMENTATION-ROADMAP.md)).
 
 ---
 

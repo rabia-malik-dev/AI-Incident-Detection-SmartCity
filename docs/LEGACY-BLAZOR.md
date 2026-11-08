@@ -1,7 +1,12 @@
-# Legacy Blazor spike
+# Legacy Blazor spike (removed)
 
-The `AIIncidentDetection.Client` / `Server` / `Shared` solution on `main` was an early **.NET 8 Blazor WASM** template used for experimentation.
+An early **.NET 8 Blazor WASM** solution (`AIIncidentDetection.Client` / `Server` / `Shared`) was removed from `main` in favor of the documented microservice layout.
 
-**Official product UI:** Angular in `frontend/`.
+**Current layout:**
 
-When Phase 4 starts, remove the Blazor projects from `main` to avoid confusion. Domain ideas (User, Video, Violation) may be reused in `backend/` entities with `Violation.Type` aligned to Chapter 9.
+- `frontend/` — Angular
+- `backend/` — ASP.NET Core Web API
+- `ml-service/` — FastAPI + YOLOv8 + ByteTrack + rules
+- `database/` — SQL Server schema
+
+Domain concepts (users, videos, violations) will be implemented as entities in `backend/` with `Violation.Type` per [Chapter 9](./Chapter9-Violation-Types-and-Phases.md).
