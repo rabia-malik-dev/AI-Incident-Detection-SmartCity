@@ -33,12 +33,27 @@ services:
       UPLOADS_DIR: /data/uploads
       SNAPSHOTS_DIR: /data/snapshots
 
-  # backend:
-  #   build: ./backend
-  #   ports: ["5000:8080"]
-  #   env_file: .env
-  #   volumes: [uploads:/data/uploads, snapshots:/data/snapshots]
-  #   depends_on: [db, ml-service]
+  backend:
+    build:
+      context: ./backend
+    container_name: smartcity-api
+    ports:
+      - "5000:8080"
+    env_file: .env
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ConnectionStrings__Default: "Server=db,1433;Database=IncidentDetection;User Id=sa;Password=${MSSQL_SA_PASSWORD};TrustServerCertificate=True;Encrypt=False"
+      MlService__BaseUrl: http://ml-service:8000
+      Storage__UploadsPath: /data/uploads
+      Storage__SnapshotsPath: /data/snapshots
+    volumes:
+      - uploads:/data/uploads
+      - snapshots:/data/snapshots
+    depends_on:
+      db:
+        condition: service_healthy
+      ml-service:
+        condition: service_started
 
   # frontend:
   #   build: ./frontend
