@@ -11,6 +11,7 @@
 | 5 | [System Design](./Chapter5-System%20Design.md) |
 | 6 | [Technology Stack](./Chapter6-%20Technology%20Stack.md) |
 | 7 | [Docker & DevOps](./Chapter7-Docker-and-DevOps.md) |
+| 7b | [CI/CD](./Chapter7-CICD.md) |
 | 8 | [ML Detection Pipeline](./Chapter8-ML-Detection-Pipeline.md) |
 | 9 | [Violation Types & Phases](./Chapter9-Violation-Types-and-Phases.md) |
 | — | [**Implementation Roadmap**](./IMPLEMENTATION-ROADMAP.md) |
