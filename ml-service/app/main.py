@@ -5,6 +5,7 @@ from contextlib import asynccontextmanager
 from pathlib import Path
 
 from fastapi import FastAPI, File, Form, HTTPException, UploadFile
+from fastapi.responses import RedirectResponse
 from ultralytics import YOLO
 
 from app.config import settings
@@ -27,6 +28,12 @@ app = FastAPI(
     description="YOLOv8 + ByteTrack + rule engine for traffic violations.",
     lifespan=lifespan,
 )
+
+
+@app.get("/", include_in_schema=False)
+def root() -> RedirectResponse:
+    """Browser-friendly entry; interactive API is at /docs."""
+    return RedirectResponse(url="/docs")
 
 
 @app.get("/health")
