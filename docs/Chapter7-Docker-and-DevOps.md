@@ -73,4 +73,4 @@ Root `docker-compose.yml` wires build contexts to those paths.
 
 - SQL Server in Docker only **or** LocalDB on Windows
 - Run `ml-service` and `backend` with `dotnet run` / `uvicorn` while iterating
-- Use full compose for demos and “works on my machine” proof for recruiters
+- Use full compose for demos and “works on my machine” proof for practice walkthroughs and portfolio reviewers

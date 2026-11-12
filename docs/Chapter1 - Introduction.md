@@ -6,14 +6,14 @@ Urban traffic violations—wrong-way driving, riding without a helmet, speeding,
 
 ## 1.2 Purpose of the Document
 
-This SRS defines functional and non-functional requirements, architecture, ML pipeline, Docker deployment, and phased delivery for recruiters, developers, and stakeholders.
+This SRS defines functional and non-functional requirements, architecture, ML pipeline, Docker deployment, and phased delivery for developers, reviewers, and stakeholders.
 
 ## 1.3 Intended Audience
 
 a) Software developers and engineers  
 b) Technical architects and ML engineers  
 c) Smart-city / civic tech stakeholders  
-d) International (e.g. UK/EU) technical hiring teams  
+d) Employers and technical reviewers (e.g. UK/EU) evaluating portfolio work  
 e) Mentors and academic reviewers  
 
 ## 1.4 Project Scope

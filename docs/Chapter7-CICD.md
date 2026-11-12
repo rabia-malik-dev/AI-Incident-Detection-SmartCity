@@ -41,8 +41,8 @@ Secrets (GitHub **Settings → Secrets**):
 | `AZURE_CREDENTIALS` or `ACR_*` | Push images |
 | `MSSQL_SA_PASSWORD`, `JWT_KEY` | Runtime env (never in repo) |
 
-Do **not** add CD until you choose a host; CI is enough for resume (“automated builds on GitHub Actions”).
+Do **not** add CD until you choose a host; CI is enough for a portfolio line (“automated builds on GitHub Actions”).
 
-## Resume / interview line
+## Practice talking point
 
 *“Every merge to main runs CI: .NET Release build and Docker image builds for API and ML services, aligned with our docker-compose production shape.”*

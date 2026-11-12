@@ -15,6 +15,9 @@
 | 8 | [ML Detection Pipeline](./Chapter8-ML-Detection-Pipeline.md) |
 | 9 | [Violation Types & Phases](./Chapter9-Violation-Types-and-Phases.md) |
 | — | [**Implementation Roadmap**](./IMPLEMENTATION-ROADMAP.md) |
+| — | [Practice & doc style](./PRACTICE-AND-DOCS-STYLE.md) |
+| — | [Week 3 test cases](./WEEK3-TEST-CASES.md) |
+| — | [API & DB routes](./API-AND-DB-ROUTES.md) |
 
 **Repository layout (target):** `frontend/` · `backend/` · `ml-service/` · `database/` · `docs/` · `docker-compose.yml`
 

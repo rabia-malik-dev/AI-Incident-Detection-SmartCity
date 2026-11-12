@@ -24,7 +24,7 @@ Build an **AI-powered, microservice** platform that ingests video, runs **object
 | 2 | Scalable architecture | Separate `frontend`, `backend`, `ml-service`, `database` containers |
 | 3 | Full-stack reporting | Auth, uploads, dashboard, export |
 | 4 | Modular ML | Rule plugins; shared detect+track core |
-| 5 | Portfolio / hiring signal | Documented SRS, metrics on labeled clips, demo via Docker Compose |
+| 5 | Portfolio / practice demo | Documented SRS, metrics on labeled clips, demo via Docker Compose |
 
 ## 2.5 System Benefits
 
